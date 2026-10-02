@@ -1,0 +1,67 @@
+# .project metadata for KubeRay
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+schema_version: "1.0.0"
+slug: "kuberay"
+name: "KubeRay"
+description: "A toolkit and Kubernetes operator that simplifies the deployment, lifecycle management, and autoscaling of Ray applications on Kubernetes."
+type: "project"
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2026-09-28T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/525"
+
+repositories:
+  - url: "https://github.com/ray-project/kuberay"
+    primary: true
+
+website: "https://github.com/ray-project/kuberay"
+
+package_managers:
+  docker:
+    - "quay.io/kuberay/operator"
+    - "quay.io/kuberay/apiserver"
+    - "quay.io/kuberay/dashboard"
+  helm: "https://ray-project.github.io/kuberay-helm/"
+  krew: "ray"
+
+security:
+  policy:
+    path: "https://github.com/ray-project/kuberay/blob/master/SECURITY.md"
+  contact:
+    email: "security-kuberay@anyscale.com"
+    advisory_url: "https://github.com/ray-project/kuberay/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/ray-project/kuberay/blob/master/CONTRIBUTING.md"
+  governance_doc:
+    path: "https://github.com/ray-project/kuberay/blob/master/GOVERNANCE.md"
+  roles_and_teams:
+    path: "https://github.com/ray-project/kuberay/blob/master/docs/community/PEOPLE.md"
+  contributor_ladder:
+    path: "https://github.com/ray-project/kuberay/blob/master/docs/community/community.md"
+  code_of_conduct:
+    path: "https://github.com/ray-project/kuberay/blob/master/CODE_OF_CONDUCT.md"
+  community_calendar:
+    path: "https://zoom-lfx.platform.linuxfoundation.org/meetings/ray?view=month"
+
+legal:
+  license:
+    path: "https://github.com/ray-project/kuberay/blob/master/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/ray-project/kuberay/blob/master/README.md"
+  api:
+    path: "https://github.com/ray-project/kuberay/blob/master/docs/reference/api.md"
+
+landscape:
+  category: "AI Native Infra"
+  subcategory: "Orchestration and Scheduling"

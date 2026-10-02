@@ -1,0 +1,40 @@
+# Maintainer roster for KubeRay
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+#
+# KubeRay committers are the project maintainers. Keep this file in sync with
+# https://github.com/ray-project/kuberay/blob/master/docs/community/PEOPLE.md
+
+maintainers:
+  - project_id: "kuberay"
+    org: "kuberay-project"
+    teams:
+      - name: "maintainers"
+        members:
+          - kevin85421
+          - andrewsykim
+          - rueian
+          - MortalHappiness
+      # Teams with "managed: false" are tracked for documentation only and are
+      # excluded from CNCF resource provisioning.
+      - name: "tsc"
+        managed: false
+        members:
+          - kevin85421
+          - andrewsykim
+          - rueian
+          - edoakes
+          - richardliaw
+      - name: "reviewers"
+        managed: false
+        members:
+          - davidxia
+          - owenowenisme
+          - win5923
+          - troychiu
+          - ryanaoleary
+      - name: "triagers"
+        managed: false
+        members:
+          - CheyuWu
+          - machichima
+          - fscnick

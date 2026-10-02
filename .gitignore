@@ -1,0 +1,5 @@
+# Cache directory from validation tools
+.cache/
+
+# OS files
+.DS_Store
